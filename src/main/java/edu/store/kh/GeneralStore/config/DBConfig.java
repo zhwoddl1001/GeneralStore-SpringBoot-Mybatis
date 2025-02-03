@@ -16,11 +16,11 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import javax.sql.DataSource;
 
 @Configuration
-@PropertySource("classpath:/config.properties") //MYSQL 아이디 비밀번호 데이터베이스저장소명칭
+@PropertySource("classpath:/config.properties")
 public class DBConfig {
 
     @Autowired
-    private ApplicationContext applicationContext; // 현재 프로젝트
+    private ApplicationContext applicationContext;
 
     @Bean
     @ConfigurationProperties(prefix = "spring.datasource.hikari")
@@ -47,7 +47,7 @@ public class DBConfig {
 
 
         sessionFactoryBean.setMapperLocations(
-                applicationContext.getResources("classpath:/mappers/**.xml")  );
+                applicationContext.getResources("classpath:/mappers/*.xml")  );
 
         sessionFactoryBean.setTypeAliasesPackage("edu.store.kh.GeneralStore.dto");
 

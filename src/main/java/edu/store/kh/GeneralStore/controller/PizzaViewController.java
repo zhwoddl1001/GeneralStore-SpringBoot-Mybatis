@@ -1,3 +1,9 @@
+package edu.store.kh.GeneralStore.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
 /**
  * ViewController는 HTML 파일의 경로를 반환
  */
@@ -45,4 +51,7 @@ public class PizzaViewController {
         // edit-pizza.html에서 id를 URL 파라미터로 사용
         return "edit-pizza"; // src/main/resources/templates/edit-pizza.html
     }
+    
+    // 피자 삭제 페이지는 피자를 관리하는 관리자가 
+    // 최근 30일 이내 삭제된 피자를 조회하지 않는 이상 현재 필요하지 않음XX
 }

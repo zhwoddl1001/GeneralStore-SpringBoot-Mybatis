@@ -5,15 +5,20 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-@Configuration // 웹 관련 설정 Springboot 프로젝트가 컴퓨터에 직접적으로 접근할 수 있도록 설정
+@Configuration
 public class WebConfig  implements WebMvcConfigurer {
+    // config.properties 에 작성한 파일 저장 경로 설정
     @Value("${upload-img}")
-    private String uploadImg;
+    private String uploadPath;
 
+    // 이미지를 처리할 때 1. static 폴더 아래 이미지
+    //                    2. 업로드 폴더 위치 이미지 설정
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-       // resource 경로에 저장된 파일을 직접적으로 접근
-        registry.addResourceHandler("/images/**") // 외부에서 보여질 이미지 경로
-                .addResourceLocations("file:"+uploadImg); // 실제 저장되는 이미지 경로
-        // 여러 경로 설정시 .addResourceLocations(); 내부에 ,로 구분
+        // 이미지 위치가 여러 공간일 경우에는  각 위치별 페이크 위치를 사용해서 별칭 사용
+        registry.addResourceHandler("/images/**")
+                .addResourceLocations("classpath:/static/images/");
+
+        registry.addResourceHandler("/uploaded/**").
+                addResourceLocations("file:"+uploadPath+"/");
     }
 }
