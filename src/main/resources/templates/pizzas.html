@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>피자 메뉴 관리</title>
+  <link rel="stylesheet" href="/pizza-style.css">
+</head>
+<body>
+<div class="container">
+  <h1>피자 메뉴</h1>
+  <table id="pizza-list">
+    <thead>
+    <tr>
+      <th>이름</th>
+      <th>가격</th>
+      <th>이미지</th>
+      <th>액션</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- JQuery로 데이터 추가 -->
+    </tbody>
+  </table>
+  <a href="/add-pizza.html">메뉴 추가</a>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+  $.ajax({
+    url:
+    method:
+  success: function(data) {
+    $('#pizza-list tbody').append(`
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><img src=alt="이미지" style="width: 50px;"></td>
+                            <td>
+                                <a href="">수정</a>
+                                <button >삭제</button>
+                            </td>
+                        </tr>
+                    `);
+  });
+  }
+  });
+</script>
+</body>
+</html>
