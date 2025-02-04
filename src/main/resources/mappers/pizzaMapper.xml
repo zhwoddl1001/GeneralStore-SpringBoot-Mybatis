@@ -16,19 +16,18 @@
     <update id="updatePizza">
         update PizzaMenu
         set
-            name = #{name},
-            price = #{price},
-            description = #{description},
-            imagePath = #{imagePath}
+            <!-- sql 컬럼명  = DTO 변수명-->
+                       name = #{name},
+                      price = #{price},
+                description = #{description},
+                  image_path = #{imagePath}
         where id = #{id}
     </update>
     <!--피자 추가하기-->
     <insert id="insertPizza">
-        insert into PizzaMenu(name,price,description,imagePath)
-        values  name = #{name},
-            price = #{price},
-            description = #{description},
-            imagePath = #{imagePath}
+                    <!-- id 값은 mysql 에서 값이 추가될 경우 자동 증가 설정 -->
+        insert into PizzaMenu(name,price,description,image_path)
+        values (#{name},#{price},#{description},#{imagePath});
     </insert>
     <!--피자 삭제하기-->
     <delete id="deletePizza">
