@@ -22,7 +22,7 @@ public class KakaoAPIController {
     @Value("${kakao.client-id}")
     private String kakaoClientId;
 
-    @Value("${kakao.redirect-uri}")
+    @Value("${kakao.redirect-url}")
     private String redirectUri;
 
     @Value("${kakao.client-secret}")
