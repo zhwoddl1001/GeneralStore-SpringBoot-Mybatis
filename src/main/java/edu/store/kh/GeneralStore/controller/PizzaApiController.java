@@ -12,6 +12,9 @@ import java.util.List;
 
 @RequestMapping("/api")
 @RestController
+// 아래 두가지 방식은 CorsConfig 랑 충돌이 날 수 있기 때문에 사용 X
+//@CrossOrigin("3000")
+//@CrossOrigin("http://localhost:3000")
 public class PizzaApiController {
     // ServiceImpl -> Autowired 호출
     @Autowired
@@ -36,6 +39,8 @@ public class PizzaApiController {
 
     // @RequestBody  -> @RequestParam 변경   @MultipartFile 추가
     // @RequestPart @RequestParam
+
+
     @PutMapping("pizzas/{id}")
     public void updatePizza(@PathVariable int id,
                             @RequestParam("name") String name,
