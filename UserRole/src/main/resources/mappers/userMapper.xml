@@ -4,14 +4,14 @@
 <mapper namespace="kh.edu.react.provider.mapper.UserMapper">
 
     <!-- 유저 정보 조회 -->
-    <select id="">
+    <select id="getUserById">
         SELECT *
         FROM userrole
         where user_id =#{userId}
     </select>
 
     <!-- 유저 로그인 확인 -->
-    <select id="">
+    <select id="loginUser">
         SELECT *
         FROM userrole
         where user_id =#{userId}

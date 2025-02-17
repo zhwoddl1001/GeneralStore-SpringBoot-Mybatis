@@ -41,11 +41,7 @@ public class DBConfig {
     public SqlSessionFactory sessionFactory(DataSource dataSource) throws Exception{
 
         SqlSessionFactoryBean sessionFactoryBean = new SqlSessionFactoryBean();
-
-
         sessionFactoryBean.setDataSource(dataSource);
-
-
         sessionFactoryBean.setMapperLocations(
                 applicationContext.getResources("classpath:/mappers/**.xml")  );
 
