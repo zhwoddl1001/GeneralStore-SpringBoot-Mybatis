@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9b5164fd-593a-4271-bed7-b043b9088b2b" name="변경" comment="LoginInterceptor user session 관리" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="XML mybatis File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;zhwoddl1001&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/zhwoddl1001/GeneralStore-SpringBoot-Mybatis.git&quot;,
+    &quot;accountId&quot;: &quot;51139e77-b645-4df9-8b29-ea18a2cd0e61&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2sVXCb4ujR5PiUqYVJsv6vbb2CQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Gradle.GeneralStore 빌드.executor": "Run",
+    "Gradle.소스 다운로드.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.GeneralStoreApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/user1/Desktop/GeneralStore",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDK",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="edu.store.kh.GeneralStore.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user1\Desktop\GeneralStore\src\main\resources\static\images" />
+      <recent name="C:\Users\user1\Desktop\GeneralStore\src\main\resources\static" />
+      <recent name="C:\Users\user1\Desktop\GeneralStore\src\main\resources" />
+      <recent name="C:\Users\user1\Desktop\GeneralStore\src\main\java\edu\store\kh\GeneralStore\config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user1\Desktop\GeneralStore\src\main\resources\static" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="edu.store.kh.GeneralStore.config" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="edu.store.kh.GeneralStore.service" />
+      <recent name="edu.store.kh.GeneralStore.config" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="GeneralStoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="GeneralStore.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.store.kh.GeneralStore.GeneralStoreApplication" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.153" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.153" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="9b5164fd-593a-4271-bed7-b043b9088b2b" name="변경" comment="" />
+      <created>1738541589021</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1738541589021</updated>
+      <workItem from="1738541590301" duration="1492000" />
+      <workItem from="1738543342817" duration="18787000" />
+      <workItem from="1738628453278" duration="19199000" />
+      <workItem from="1738712376958" duration="17390000" />
+      <workItem from="1738801579079" duration="2072000" />
+      <workItem from="1739245237189" duration="77000" />
+      <workItem from="1739318590661" duration="5564000" />
+      <workItem from="1739404764351" duration="10185000" />
+      <workItem from="1739491251705" duration="11159000" />
+      <workItem from="1739749657943" duration="1267000" />
+      <workItem from="1739837015519" duration="25000" />
+      <workItem from="1739837045420" duration="54000" />
+      <workItem from="1739837118109" duration="6000" />
+      <workItem from="1739837147157" duration="94000" />
+    </task>
+    <task id="LOCAL-00001" summary="pizza api update">
+      <option name="closed" value="true" />
+      <created>1738565219924</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738565219924</updated>
+    </task>
+    <task id="LOCAL-00002" summary="kakao api login -&gt; signup">
+      <option name="closed" value="true" />
+      <created>1738651620478</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1738651620478</updated>
+    </task>
+    <task id="LOCAL-00003" summary="naver api login -&gt; signup">
+      <option name="closed" value="true" />
+      <created>1738722167848</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738722167848</updated>
+    </task>
+    <task id="LOCAL-00004" summary="kakao Map API JavaScript">
+      <option name="closed" value="true" />
+      <created>1738727345956</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738727345956</updated>
+    </task>
+    <task id="LOCAL-00005" summary="LoginInterceptor user session 관리">
+      <option name="closed" value="true" />
+      <created>1739499624560</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1739499624560</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pizza api update" />
+    <MESSAGE value="kakao api login -&gt; signup" />
+    <MESSAGE value="naver api login -&gt; signup" />
+    <MESSAGE value="kakao Map API JavaScript" />
+    <MESSAGE value="LoginInterceptor user session 관리" />
+    <option name="LAST_COMMIT_MESSAGE" value="LoginInterceptor user session 관리" />
+  </component>
+</project>
