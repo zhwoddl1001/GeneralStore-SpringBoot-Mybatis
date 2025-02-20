@@ -13,7 +13,7 @@ public class User {
     // id 값 자동증가가 없기때문에 @Id @GenerateValue 값 사용 XX
 
     private String userId;
-    private String username;
+    private String userName;
     private String userPassword;
     private String userEmail;
     private String userRole;
