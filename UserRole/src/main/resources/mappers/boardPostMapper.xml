@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kh.edu.react.provider.mapper.BoardPostMapper">
+
+    <!-- 모든 게시물 조회 (GET /api/posts) -->
+    <select id="getAllPosts">
+        SELECT * FROM board_post WHERE post_status != '삭제됨' ORDER BY created_at DESC
+    </select>
+
+    <!-- 게시물 상세 조회 (GET /api/posts/{postId}) -->
+    <select id="getPostById">
+        SELECT * FROM board_post WHERE post_id = #{postId} AND post_status != '삭제됨'
+    </select>
+
+    <!-- 게시물 검색 (GET /api/posts/search?keyword=검색어) -->
+    <select id="searchPosts">
+        SELECT * FROM board_post
+        WHERE (post_title LIKE CONCAT('%', #{keyword}, '%')
+            OR post_content LIKE CONCAT('%', #{keyword}, '%'))
+          AND post_status != '삭제됨'
+    </select>
+
+    <!-- 게시물 등록 (POST /api/posts) -->
+    <insert id="insertPost" >
+        INSERT INTO board_post (user_id, post_title, post_content, thumbnail, post_category, post_status, created_at, updated_at)
+        VALUES (#{userId}, #{postTitle}, #{postContent}, #{thumbnail}, #{postCategory}, #{postStatus}, NOW(), NOW())
+    </insert>
+
+    <!-- 게시물 수정 (PUT /api/posts/{postId}) -->
+    <update id="updatePost">
+        UPDATE board_post
+        SET post_title = #{postTitle},
+            post_content = #{postContent},
+            thumbnail = #{thumbnail},
+            post_category = #{postCategory},
+            post_status = #{postStatus},
+            updated_at = NOW()
+        WHERE post_id = #{postId}
+    </update>
+
+    <!-- 게시물 삭제 (소프트 삭제, DELETE /api/posts/{postId}) -->
+    <update id="deletePost">
+        UPDATE board_post
+        SET post_status = '삭제됨', deleted_at = NOW()
+        WHERE post_id = #{postId}
+    </update>
+</mapper>

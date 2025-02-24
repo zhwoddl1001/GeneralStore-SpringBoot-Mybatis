@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b5164fd-593a-4271-bed7-b043b9088b2b" name="변경" comment="LoginInterceptor user session 관리">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9b5164fd-593a-4271-bed7-b043b9088b2b" name="변경" comment="LoginInterceptor user session 관리" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,6 +147,7 @@
       <workItem from="1739855810858" duration="51000" />
       <workItem from="1739861285781" duration="1495000" />
       <workItem from="1739923570862" duration="2044000" />
+      <workItem from="1740019810952" duration="581000" />
     </task>
     <task id="LOCAL-00001" summary="pizza api update">
       <option name="closed" value="true" />
