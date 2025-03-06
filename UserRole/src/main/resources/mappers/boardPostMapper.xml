@@ -13,7 +13,17 @@
         SELECT * FROM board_post WHERE post_id = #{postId} AND post_status != '삭제됨'
     </select>
 
-    <!-- 게시물 검색 (GET /api/posts/search?keyword=검색어) -->
+    <!-- 게시물 검색 (GET /api/posts/search?keyword=검색어)
+    keyword 명칭은 sql 이나 dto에 작성한 명칭이 아니지만 적용 가능!
+    Mybatis 에서 Sql 유동적으로 매핑 가능
+    Java 에서 @Param 어노테이션 을 통해 전달된 값과 자동으로 매핑
+
+    insert update 위와같은 방법으로 가능하긴 하지만
+    SQL 에 데이터를 직접적으로 설정해주는 명칭이기 때문에 이름을 맞춰서 작성
+
+    where 절의 경우 데이터를 직접적으로 설정해주는 것이 아니라
+    sql 에 저장된 데이터를 가져오는 조건이기 때문에 keyword 와 같은 형식으로 사용 ok
+    -->
     <select id="searchPosts">
         SELECT * FROM board_post
         WHERE (post_title LIKE CONCAT('%', #{keyword}, '%')
